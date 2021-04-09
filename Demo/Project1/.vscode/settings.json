@@ -1,0 +1,15 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "One Dark Pro",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.fontSize": 14,
+
+    "java.home": "/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home",
+    "java.configuration.maven.userSettings": "/usr/local/Cellar/maven/3.6.3_1/libexec/conf/settings.xml",
+    "maven.terminal.useJavaHome": true,
+
+    "files.watcherExclude": {
+        "**/target": true
+    }
+}

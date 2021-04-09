@@ -1,0 +1,46 @@
+[0m2021.03.30 15:36:32 INFO  Started: Metals version 0.10.0 in workspace '/Users/didi/Documents/git/Scala/Demo' for client vscode 1.54.3.[0m
+[0m2021.03.30 15:36:32 INFO  time: initialize in 0.44s[0m
+[0m2021.03.30 15:36:33 WARN  Build server is not auto-connectable.[0m
+[0m2021.03.30 15:36:33 WARN  no build tool detected in workspace '/Users/didi/Documents/git/Scala/Demo'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.03.30 15:36:33 WARN  no build target for: /Users/didi/Documents/git/Scala/Demo/Project1/src/main/scala/example/Hello.scala[0m
+[0m2021.03.30 15:36:35 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+package example
+
+object Hello extends Greeting with App {
+  println(greeting)
+}
+
+trait Greeting { 
+  lazy val greeting: String = "Hello"
+}
+
+
+[0m2021.03.30 15:36:37 INFO  time: code lens generation in 3.68s[0m
+三月 30, 2021 3:37:14 下午 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 9
+[0m2021.03.30 15:37:14 WARN  no build target for: /Users/didi/Documents/git/Scala/Demo/Project1/src/main/scala/com/demo/project1/Hello.scala[0m
+package com.demo.pro1
+
+import com.demo.logging.Logger.info
+
+class Hello(name: String, daysToComplete: Int)
+
+class Test {
+  val project1 = new Hello("TPS Reports", 1)
+  val project2 = new Hello("Website redesign", 5)
+  info("Created projects")  // Prints "INFO: Created projects"
+}
+
+
+object Main extends App {
+  println("Hello, World!")
+  val a = new Test()
+  println(a)
+}
+
+
+
+
+三月 30, 2021 3:38:46 下午 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+信息: Unsupported notification method: $/setTraceNotification
+[0m2021.03.30 15:39:09 INFO  shutting down Metals[0m
